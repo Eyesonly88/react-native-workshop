@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a540c760-8174-49ea-af0f-6a1226213f27" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kittens-app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/kittens-app/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kittens-app/Kittens.js" beforeDir="false" afterPath="$PROJECT_DIR$/kittens-app/Kittens.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kittens-app/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/kittens-app/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kittens-app/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/kittens-app/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -62,14 +58,26 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Kittens.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Kittens.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kittens-app/Kittens.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="723">
-              <caret line="108" column="23" lean-forward="true" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
+            <state relative-caret-position="162">
+              <caret line="90" column="11" lean-forward="true" selection-start-line="90" selection-start-column="11" selection-end-line="90" selection-end-column="11" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="72">
+                <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -107,6 +115,7 @@
         <option value="$PROJECT_DIR$/kittens-app/App.js" />
         <option value="$PROJECT_DIR$/kittens-app/Login.js" />
         <option value="$PROJECT_DIR$/kittens-app/Kittens.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -1456,9 +1465,10 @@
     <dismissed value="$PROJECT_DIR$/kittens-app/package.json" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="222" />
     <option name="y" value="22" />
-    <option name="width" value="1227" />
-    <option name="height" value="1016" />
+    <option name="width" value="1218" />
+    <option name="height" value="836" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -1520,15 +1530,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524114777974</updated>
-      <workItem from="1524114782567" duration="6736000" />
+      <workItem from="1524114782567" duration="6979000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6736000" />
+    <option name="totallyTimeSpent" value="6979000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1227" height="1016" extended-state="0" />
+    <frame x="222" y="22" width="1218" height="836" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
@@ -1576,16 +1586,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="36">
-            <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kittens-app/logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -1625,11 +1625,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/kittens-app/Kittens.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="723">
-          <caret line="108" column="23" lean-forward="true" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
+        <state relative-caret-position="162">
+          <caret line="90" column="11" lean-forward="true" selection-start-line="90" selection-start-column="11" selection-end-line="90" selection-end-column="11" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="72">
+            <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
