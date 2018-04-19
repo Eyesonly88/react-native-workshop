@@ -1,9 +1,10 @@
 import React from 'react';
-import {Button, Image, StyleSheet, Text, TextInput, View} from 'react-native';
+import {StyleSheet} from 'react-native';
 import {StackNavigator, TabNavigator} from 'react-navigation';
 
 import * as firebase from 'firebase';
 import Kittens from './Kittens';
+import Login from './Login';
 
 
 // Color Palette
@@ -83,6 +84,10 @@ export default class App extends React.Component {
     });
   };
 
+  setLoginState = (loggedIn) => {
+    this.setState({loggedIn})
+  }
+
   render() {
     // wait until the font is loaded
     // if (!this.state.fontLoaded) {
@@ -91,35 +96,7 @@ export default class App extends React.Component {
 
     if (!this.state.loggedIn) {
       return (
-        <View style={{
-          flex: 1,
-          padding: 5,
-          backgroundColor: '#fafafa',
-          alignItems: 'center',
-          justifyContent: 'center'
-        }}>
-          <Image
-            style={{marginBottom: 50, width: 250, height: 100}}
-            source={require('./logo.png')}
-          />
-          <Text style={{fontSize: 20, color: 'grey', marginBottom: 10}}>Username /
-            Email:</Text>
-          <TextInput
-            style={{height: 40, width: 200, borderColor: 'gray', borderWidth: 1, marginBottom: 10}}
-            onChangeText={(text) => this.setState({text})}
-            value={this.state.text}
-          />
-          <Text style={{fontSize: 20, color: 'grey', marginBottom: 10}}>Password:</Text>
-          <TextInput
-            style={{height: 40, width: 200, borderColor: 'gray', borderWidth: 1, marginBottom: 10}}
-            onChangeText={(text) => this.setState({pwtext: text})}
-            value={this.state.pwtext}
-            secureTextEntry
-          />
-          <Button title='Login' color={global.charcoal} onPress={() => {
-            this.setState({loggedIn: true});
-          }}/>
-        </View>
+        <Login setLoginState={this.setLoginState}/>
       );
     }
     // user is logged in
