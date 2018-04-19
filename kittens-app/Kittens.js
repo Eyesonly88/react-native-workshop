@@ -1,6 +1,6 @@
 import React from 'react';
-import {Dimensions, FlatList, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-
+import {Button, Dimensions, FlatList, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import clone from 'lodash/clone';
 
 const {width, height} = Dimensions.get('window');
 const ASPECT_RATIO = width / height;
@@ -25,9 +25,19 @@ class MyListItem extends React.PureComponent {
         <View style={{flex: 0.5, padding: 5, flexDirection: 'row', justifyContent: 'flex-start', alignItems: 'center'}}>
           <TouchableOpacity onPress={this._onPress}>
             <View style={{flex: 1, margin: 3, padding: 10, borderColor: 'grey', borderRadius: 5, flexWrap: 'wrap'}}>
-              <Text style={{fontSize: 18, color: global.darkBlue}}>
+              <Text style={{fontFamily: 'roboto-bold', fontSize: 22, color: global.darkBlue}}>
                 {this.props.name}
               </Text>
+              {
+                this.props.lost && <Text style={{fontFamily: 'roboto-light', fontSize: 19, color: 'red'}}>
+                  LOST :(
+                </Text>
+              }
+              {
+                this.props.found && <Text style={{fontFamily: 'roboto-light', fontSize: 19, color: 'green'}}>
+                  FOUND :)
+                </Text>
+              }
             </View>
           </TouchableOpacity>
         </View>
@@ -41,7 +51,7 @@ export default class Kittens extends React.Component {
   static navigationOptions = ({navigation}) => {
     const {state} = navigation;
     return {
-      title: 'Kittens',
+      title: 'Lost & Found',
       headerStyle: {
         backgroundColor: '#9aceeb'
       }
@@ -49,6 +59,18 @@ export default class Kittens extends React.Component {
       //   <Text>Kittens</Text>
       // )
     };
+  };
+
+  state = {
+    data: [{
+      name: 'cat',
+      lost: true,
+      found: false
+    }, {
+      name: 'dog',
+      lost: false,
+      found: true
+    }]
   };
 
   _keyExtractor = (item, index) => item.id;
@@ -70,11 +92,23 @@ export default class Kittens extends React.Component {
         <FlatList
           removeClippedSubviews={false}
           initialNumToRender={5}
-          data={[]}
+          data={this.state.data}
           // extraData={this.state}
           keyExtractor={this._keyExtractor}
           renderItem={this._renderItem}
         />
+        <Button title='add animal' onPress={() => {
+          const animal = {
+            name: 'new animal',
+            lost: !!Math.random(),
+            found: !!Math.random()
+          };
+          const eData = clone(this.state.data);
+          eData.push(animal);
+          this.setState({
+            data: eData
+          });
+        }}/>
       </View>
     );
   }

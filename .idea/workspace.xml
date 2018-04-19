@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a540c760-8174-49ea-af0f-6a1226213f27" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/kittens-app/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/saveactions_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/saveactions_settings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kittens-app/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/kittens-app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kittens-app/Kittens.js" beforeDir="false" afterPath="$PROJECT_DIR$/kittens-app/Kittens.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kittens-app/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/kittens-app/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kittens-app/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/kittens-app/app.json" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,8 +23,17 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kittens-app/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+            <state relative-caret-position="54">
+              <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/kittens-app/app.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -31,8 +41,8 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kittens-app/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="474">
-              <caret line="98" column="12" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="12" />
+            <state relative-caret-position="3072">
+              <caret line="96" column="31" lean-forward="true" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -40,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Login.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/kittens-app/Login.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="407">
-              <caret line="36" column="87" selection-start-line="36" selection-start-column="87" selection-end-line="36" selection-end-column="87" />
+            <state relative-caret-position="755">
+              <caret line="72" column="63" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -52,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Kittens.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Kittens.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/kittens-app/Kittens.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+            <state relative-caret-position="723">
+              <caret line="108" column="23" lean-forward="true" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -82,6 +92,8 @@
     <findStrings>
       <find>gilr</find>
       <find>this.state.</find>
+      <find>image</find>
+      <find>fontLoaded</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -91,9 +103,10 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/kittens-app/package.json" />
-        <option value="$PROJECT_DIR$/kittens-app/Kittens.js" />
+        <option value="$PROJECT_DIR$/kittens-app/app.json" />
         <option value="$PROJECT_DIR$/kittens-app/App.js" />
         <option value="$PROJECT_DIR$/kittens-app/Login.js" />
+        <option value="$PROJECT_DIR$/kittens-app/Kittens.js" />
       </list>
     </option>
   </component>
@@ -1444,7 +1457,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1559" />
+    <option name="width" value="1227" />
     <option name="height" value="1016" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -1507,18 +1520,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1524114777974</updated>
-      <workItem from="1524114782567" duration="4384000" />
+      <workItem from="1524114782567" duration="6736000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4384000" />
+    <option name="totallyTimeSpent" value="6736000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1559" height="1016" extended-state="0" />
+    <frame x="0" y="22" width="1227" height="1016" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16998075" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -1576,37 +1589,44 @@
     <entry file="file://$PROJECT_DIR$/kittens-app/logo.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/kittens-app/Kittens.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/kittens-app/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        <state relative-caret-position="54">
+          <caret line="3" column="18" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/kittens-app/App.js">
+    <entry file="file://$PROJECT_DIR$/kittens-app/app.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="98" column="12" selection-start-line="98" selection-start-column="12" selection-end-line="98" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="198">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/kittens-app/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="36" column="87" selection-start-line="36" selection-start-column="87" selection-end-line="36" selection-end-column="87" />
+        <state relative-caret-position="755">
+          <caret line="72" column="63" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kittens-app/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3072">
+          <caret line="96" column="31" lean-forward="true" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/kittens-app/Kittens.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="723">
+          <caret line="108" column="23" lean-forward="true" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

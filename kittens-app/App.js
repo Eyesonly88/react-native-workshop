@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
 import {StackNavigator, TabNavigator} from 'react-navigation';
+import {Font} from 'expo';
 
 import * as firebase from 'firebase';
 import Kittens from './Kittens';
@@ -57,7 +58,8 @@ export default class App extends React.Component {
 
     this.state = {
       data: [],
-      loggedIn: false
+      loggedIn: false,
+      fontLoaded: false
     };
 
     firebase.initializeApp(firebaseConfig);
@@ -65,15 +67,13 @@ export default class App extends React.Component {
 
   async componentDidMount() {
     // TODO: designers to find a nice font
-    // await Font.loadAsync({
-    //   'gilroy-light': require('./assets/fonts/Gilroy-Light.otf'),
-    //   'gilroy-bold': require('./assets/fonts/Gilroy-ExtraBold.otf')
-    // });
-    //
-    // this.setState({fontLoaded: true});
-  }
+    await Font.loadAsync({
+      'roboto-light': require('./assets/font/RobotoCondensed-Light.ttf'),
+      'roboto-bold': require('./assets/font/RobotoCondensed-Bold.ttf')
+    });
 
-  componentDidMount() {
+    this.setState({fontLoaded: true});
+
     // Listen for authentication state to change.
     firebase.auth().onAuthStateChanged((user) => {
       if (user != null) {
@@ -82,17 +82,17 @@ export default class App extends React.Component {
       }
       // Do other things
     });
-  };
+  }
 
   setLoginState = (loggedIn) => {
-    this.setState({loggedIn})
-  }
+    this.setState({loggedIn});
+  };
 
   render() {
     // wait until the font is loaded
-    // if (!this.state.fontLoaded) {
-    //   return null;
-    // }
+    if (!this.state.fontLoaded) {
+      return null;
+    }
 
     if (!this.state.loggedIn) {
       return (

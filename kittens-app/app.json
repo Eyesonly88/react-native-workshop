@@ -1,5 +1,11 @@
 {
   "expo": {
-    "sdkVersion": "26.0.0"
+    "sdkVersion": "26.0.0",
+    "ios": {
+      "bundleIdentifier": "workshop.reactnative"
+    },
+    "android": {
+      "package": "workshop.reactnative"
+    }
   }
 }
